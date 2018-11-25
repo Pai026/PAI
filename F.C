@@ -1,3 +1,4 @@
+//FIBONNACI NUMBER GENERATOR
 #include<stdio.h>
 int fib(int a)
 {  if((a==0)||(a==1))
