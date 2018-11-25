@@ -1,3 +1,4 @@
+//TO UNDERSTAND BASIC WORKING OF POINTER
 #include<stdio.h>
 #include<conio.h>
 int main()
