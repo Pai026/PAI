@@ -1,3 +1,4 @@
+//ARRAY DELETION
 #include<stdio.h>
 #include<stdlib.h>
 void del_beg(int A[],int *n)
