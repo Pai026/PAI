@@ -1,3 +1,4 @@
+//INSERTION IN AN ARRAY
 #include<stdio.h>
 #include<stdlib.h>
 void in_beg(int A[],int *n,int key,int max)
