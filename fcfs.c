@@ -14,7 +14,7 @@ int main()
     printf("\nEnter the head position");
     scanf("%d",&head);
     
-    for(i=1;i<n;i++)
+    for(i=0;i<n;i++)
     {   diff=abs(p[i]-head);
         thm=thm+diff;
         head=p[i];
