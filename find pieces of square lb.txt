@@ -1,0 +1,44 @@
+gcd = math.gcd(l,b)
+    return int((l/gcd)*(b/gcd))
+
+#Even Odd Query
+result= []
+    for i,j in queries:
+        if(i<len(arr) and arr[i]==0 and i!=j):
+            result.append('Odd')
+        else:
+            if(arr[i-1]%2==0):
+                result.append('Even')
+            else:
+                result.append('Odd')
+    return result
+
+#strange grid
+def strangeGrid(r, c):
+    #
+    # Write your code here.
+    #
+    if(r%2==1):
+        return (r-1)*5+(c-1)*2
+    else:
+        return (r-2)*5+1+(c-1)*2
+
+#filling a,b,c
+
+def solve(a, b, c):
+    a,b=max(a,b),min(a,b)
+    if(c<=max(a,b) and c%math.gcd(a,b)==0):
+        return 'YES'
+    else:
+        return 'NO'
+
+#You are given an integer N. Can you find the least positive integer X made up of only 9's and 0's, such that, X is a multiple of N
+def solve(n):
+    
+    i=1
+    while True:
+       j = int(bin(i)[2:].replace('1','9'))
+       if(j%n==0):
+        return str(j)
+       else:
+        i+=1
