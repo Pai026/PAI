@@ -1,0 +1,11 @@
+void keyword
+main keyword
+int keyword
+float keyword
+char keyword
+double keyword
+long keyword
+if keyword
+else keyword
+sum i
+a i
