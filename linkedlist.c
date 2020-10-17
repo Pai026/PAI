@@ -36,6 +36,49 @@ int print(struct node* a)
     }
     printf("%d ",head->value);
 }
+
+int delete(struct node** a,int item)
+{
+    struct node* head = *a;
+    struct node* temp = head->next;
+    while(head->next != NULL)
+    {
+        if(temp->value==item)
+        {
+            head->next=temp->next;
+            temp->next=NULL;
+            break;
+        }
+        temp=temp->next;
+        head = head->next;
+    }
+
+}
+
+void find(struct node** a,int item)
+{
+    struct node* head = *a;
+    int flag=0;
+    while(head)
+    {
+        
+        if(head->value==item)
+        {
+            flag=1;
+            break;
+        }
+        head=head->next;
+    }
+    if(flag==1)
+    {
+        printf("\nElement Found\n");
+    }
+    else
+    {
+        printf("\nNot Found\n");
+    }
+    
+}
 int main()
 {
     struct node* a=NULL;
@@ -44,6 +87,9 @@ int main()
     insert(&a,7);
     insert(&a,8);
     insert(&a,9);
+    find(&a,9);
+    delete(&a,9);
+    find(&a,9);
     print(a);
     return 0;
 
